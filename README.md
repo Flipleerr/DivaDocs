@@ -18,10 +18,10 @@
   - ps3dec - `.iso` decryption and extraction
   - multiMAN - general purpose back-up and file manager for PS3
 
-  # to-do
-  - [x] investigate `.LIT` and `.FOG` files
+  ## to-do
+  - [ ] investigate `.LIT` and `.FOG` files
   - [ ] check if removing data.psarc changes anything after the install process is completed
   - [x] find out why QuickBMS complains about the file header being `FARC` instead of `FArC`
 
-  # contributing
+  ## contributing
   if you have any knowledge on this game's inner workings, either submit a pull request with your findings or contact @memroyleak on Discord
