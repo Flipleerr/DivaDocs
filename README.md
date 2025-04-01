@@ -8,7 +8,7 @@
   - the game installs assets on first launch. comparing the installed data size with the `data.psarc` file reveals that those files will likely have to be modified on disk
   - `data.psarc` features encrypted `.farc` files, as well as a few `.txt` files encrypted with the custom DIVAFILE protocol
   - DIVAFILE's decryption routine can be found within the Japanese copy of the game
-  - there is stage/character animation data in files labeled `NSxxx_STAGE.LIT`, `NSxxx_CHARA.LIT` as well as `NSxxx.FOG` files (possibly GI data)
+  - stage lighting is stored in "XX###_STAGE.LIT" as well as fog parameters in "XX###.FOG"
 
   ## tools
   useful tools to help with manipulating and packing files:
@@ -16,10 +16,10 @@
   - UnPSARC - `.psarc` file unpacking
   - ffmpeg - media format transcoding (`.avc` and `.ogg`)
   - ps3dec - `.iso` decryption and extraction
-  - MULTIman - general purpose back-up and file manager for PS3
+  - multiMAN - general purpose back-up and file manager for PS3
 
   # to-do
-  - [ ] investigate `.LIT` and `.FOG` files
+  - [x] investigate `.LIT` and `.FOG` files
   - [ ] check if removing data.psarc changes anything after the install process is completed
   - [x] find out why QuickBMS complains about the file header being `FARC` instead of `FArC`
 
