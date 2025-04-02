@@ -1,7 +1,7 @@
   # DivaDocs
   WIP documentation for Project Diva F 2nd modding
 
-  this repository serves as a hub for documenting discoveries, tools formats and other useful info to assist with modding *Hatsune Miku: Project Diva F 2nd* on original hardware. the repository will be updated as new info is discovered.
+  this repository serves as a hub for documenting discoveries, tools, formats and other useful info to assist with modding *Hatsune Miku: Project Diva F 2nd* on original hardware. the repository will be updated as new info is discovered.
 
   ## current findings
   - the game uses common formats like `.avc`, `.ogg` and `.psarc`, as well as proprietary formats specific to SEGA like `.farc` (possibly standing for File Archive?)
@@ -9,6 +9,7 @@
   - `data.psarc` features encrypted `.farc` files, as well as a few `.txt` files encrypted with the custom DIVAFILE protocol
   - DIVAFILE's decryption routine can be found within the Japanese copy of the game
   - stage lighting is stored in "XX###_STAGE.LIT" as well as fog parameters in "XX###.FOG"
+  - the game features Nvidia's Cg (C for Graphics) shaders with what seems to be intense compiler optimizations and next-to-none human readability
 
   ## tools
   useful tools to help with manipulating and packing files:
@@ -19,9 +20,10 @@
   - multiMAN - general purpose back-up and file manager for PS3
 
   ## to-do
-  - [ ] investigate `.LIT` and `.FOG` files
+  - [x] investigate `.LIT` and `.FOG` files
   - [ ] check if removing data.psarc changes anything after the install process is completed
   - [x] find out why QuickBMS complains about the file header being `FARC` instead of `FArC`
+  - [ ] further investigate the Cg shaders in `shaders_ps3.farc`
 
   ## contributing
   if you have any knowledge on this game's inner workings, either submit a pull request with your findings or contact @memroyleak on Discord
